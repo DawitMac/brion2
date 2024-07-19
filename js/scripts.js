@@ -41,11 +41,11 @@
         $(".hamburger").toggleClass("is-opened-navi");
       });
 //=======
-    $('.site-navigation .inner ul li i').click(function () {
-      $(this).parent().children('.site-navigation .inner ul li ul').slideToggle(300);
-      return true;
-//>>>>>>> 67245abcdb283f99bc97ead752e4cdcd4da2cb4b
-    });
+//     $('.site-navigation .inner ul li i').click(function () {
+//       $(this).parent().children('.site-navigation .inner ul li ul').slideToggle(300);
+//       return true;
+// //>>>>>>> 67245abcdb283f99bc97ead752e4cdcd4da2cb4b
+//     });
 
 
     // HAMBURGER MENU

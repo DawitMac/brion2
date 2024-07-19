@@ -50,7 +50,7 @@
         $(".site-navigation").css("transition-delay", "0.5s");
         $(".site-navigation .layer").css("transition-delay", "0.3s");
         $(".site-navigation .inner").css("transition-delay", "0s");
-        $(".hamburger").toggleClass("is-opened-navi");
+                $(".hamburger").toggleClass("is-opened-navi");
 
       } else {
         $(".site-navigation").addClass('active');
@@ -58,7 +58,6 @@
         $(".site-navigation.active").css("transition-delay", "0s");
         $(".site-navigation.active .layer").css("transition-delay", "0.2s");
         $(".site-navigation.active .inner").css("transition-delay", "0.7s");
-        
       }
       $(this).toggleClass("is-opened-navi");
     });
@@ -72,15 +71,12 @@
         $(".social-media").css("transition-delay", "0.5s");
         $(".social-media .layer").css("transition-delay", "0.3s");
         $(".social-media .inner").css("transition-delay", "0s");
-        
-
       } else {
         $(".social-media").addClass('active');
         $("body").toggleClass("overflow");
         $(".social-media.active").css("transition-delay", "0s");
         $(".social-media.active .layer").css("transition-delay", "0.2s");
         $(".social-media.active .inner").css("transition-delay", "0.7s");
-
       }
 
     });

@@ -432,8 +432,8 @@ textarea {
 .preloader .inner span {
   color: #fff;
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 13px;
+  font-weight: 800;
+  font-size: 30px;
 }
 .preloader .inner figure {
   display: block;
@@ -441,7 +441,7 @@ textarea {
   transition-delay: 0.1s;
 }
 .preloader .inner figure img {
-  height: 40px;
+  height: 80px;
   transform: translateX(-7px);
 }
 

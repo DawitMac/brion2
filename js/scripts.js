@@ -33,7 +33,8 @@
 //<<<<<<< HEAD
 
     $('.site-navigation .inner ul li').click(function () {
-        $("body").toggleClass("overflow");
+      
+        // $("body").toggleClass("overflow");
         $(".site-navigation").removeClass("active");
         $(".site-navigation").css("transition-delay", "0.5s");
         $(".site-navigation .layer").css("transition-delay", "0.3s");
@@ -51,7 +52,7 @@
     // HAMBURGER MENU
     $('.hamburger').on('click', function (e) {
       if ($(".site-navigation").hasClass("active")) {
-        $("body").toggleClass("overflow");
+        // $("body").toggleClass("overflow");
         $(".site-navigation").removeClass("active");
         $(".site-navigation").css("transition-delay", "0.5s");
         $(".site-navigation .layer").css("transition-delay", "0.3s");
@@ -60,7 +61,7 @@
 
       } else {
         $(".site-navigation").addClass('active');
-        $("body").toggleClass("overflow");
+        // $("body").toggleClass("overflow");
         $(".site-navigation.active").css("transition-delay", "0s");
         $(".site-navigation.active .layer").css("transition-delay", "0.2s");
         $(".site-navigation.active .inner").css("transition-delay", "0.7s");
@@ -72,14 +73,14 @@
     // FOLLOW US
     $('.follow-us').on('click', function (e) {
       if ($(".social-media").hasClass("active")) {
-        $("body").toggleClass("overflow");
+        // $("body").toggleClass("overflow");
         $(".social-media").removeClass("active");
         $(".social-media").css("transition-delay", "0.5s");
         $(".social-media .layer").css("transition-delay", "0.3s");
         $(".social-media .inner").css("transition-delay", "0s");
       } else {
         $(".social-media").addClass('active');
-        $("body").toggleClass("overflow");
+        // $("body").toggleClass("overflow");
         $(".social-media.active").css("transition-delay", "0s");
         $(".social-media.active .layer").css("transition-delay", "0.2s");
         $(".social-media.active .inner").css("transition-delay", "0.7s");
@@ -91,14 +92,14 @@
     // ALL CASES
     $('.all-cases-link b').on('click', function (e) {
       if ($(".all-cases").hasClass("active")) {
-        $("body").toggleClass("overflow");
+        // $("body").toggleClass("overflow");
         $(".all-cases").removeClass("active");
         $(".all-cases").css("transition-delay", "0.5s");
         $(".all-cases .layer").css("transition-delay", "0.3s");
         $(".all-cases .inner").css("transition-delay", "0s");
       } else {
         $(".all-cases").addClass('active');
-        $("body").toggleClass("overflow");
+        // $("body").toggleClass("overflow");
         $(".all-cases.active").css("transition-delay", "0s");
         $(".all-cases.active .layer").css("transition-delay", "0.2s");
         $(".all-cases.active .inner").css("transition-delay", "0.7s");
@@ -213,20 +214,21 @@
         url = "/" + url;
          $('.page-transition').removeClass("active");
             $(".hamburger").toggleClass("open");
-            $("body").toggleClass("overflow");
+            // $("body").toggleClass("overflow");
             $(".navigation-menu").removeClass("active");
             $(".navigation-menu .inner ul").css("transition-delay", "0s");
             $(".navigation-menu .inner blockquote").css("transition-delay", "0s");
             $(".navigation-menu .bg-layers span").css("transition-delay", "0.3s");
-  $('.page-transition').toggleClass("active");
-          setTimeout(function () {
-            window.location = url;
-          }, 1000);
-            // $('html, body').animate({
-            //   scrollTop: $(hash).offset().top
-            // }, 1000);
-window.history.pushState(null, null, "index.html");
-console.log(url);
+  // $('.page-transition').toggleClass("active");
+  //         setTimeout(function () {
+  //           window.location = url;
+  //         }, 1000);
+  
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 1000);
+            window.history.pushState(null, null, "index.html");
+            console.log(url);
         // e.preventDefault();
         // var url = this.getAttribute("href");
 
@@ -237,7 +239,7 @@ console.log(url);
         //   if ($('body ' + hash).length != 0) {
         //     $('.page-transition').removeClass("active");
         //     $(".hamburger").toggleClass("open");
-        //     $("body").toggleClass("overflow");
+           // $("body").toggleClass("overflow");
         //     $(".navigation-menu").removeClass("active");
         //     $(".navigation-menu .inner ul").css("transition-delay", "0s");
         //     $(".navigation-menu .inner blockquote").css("transition-delay", "0s");
